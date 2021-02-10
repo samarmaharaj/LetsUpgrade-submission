@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LetsUpgrade Assignment #1</title>
+<!--| This file is submitted as LetsUpgrade's Assignment by @samar_maharaj |-->
+</head>
+<body>
+<script type="text/javascript">
+console.log(1 + "2" + "2");
+/* output will be - 112 because adding number and string returns string */
+console.log(1 + +"2" + "2");
+/* output will be - 32 because first two numbers are added together to return number and after adding to string returns string */
+console.log(1 + -"1" + "2");
+/* output will be - 32 because first two numbers are subtracted to return number and after adding to string returns string */
+console.log(+"1" + "1" + "2");
+/* output will be - 112 because all are treated as string under " " */
+console.log( "A" - "B" + "2");
+/* output will be - NaN2 because string cannot be subtracted from a string which returns a "NaN" and then remaining string are concatenated*/
+console.log( "A" - "B" + 2);
+/* output will be - NaN because string cannot be subtracted from a string which returns a "NaN" and then number cannot be added to a NaN (not a number)*/
+</script>
+</body>
+</html>
