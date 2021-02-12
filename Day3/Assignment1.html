@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,  initial-scale=1" >
+<title>LetsUpgrade Assignment #1</title>
+<!--| This file is submitted as LetsUpgrade's Assignment by @samar_maharaj |-->
+</head>
+<body>
+<style type="text/css">
+body
+{
+  margin:0;
+  padding:0;
+}
+input
+{
+  border: 1px solid red;
+  margin:50px;
+  background-color: rgb(255, 100, 0);
+  color: white;
+  width: 100%;
+  height: 2rem;
+  font-size: 2rem;
+  font-family: monospace, monospace;
+}
+p
+{
+  font-size: 2rem;
+  font-family: monospace, monospace;
+  color: yellow;
+}
+div
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  
+}
+button
+{
+  width: 50vw;
+  height: 4vh;
+  font-size: 1rem;
+  background: #f1511e;
+  color: white;
+  border: none;
+  outline: 0;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+h1
+{
+   color: white;
+   border-bottom: 2px solid #f1511e;
+   width: 100%;
+   height: 2rem;
+   font-family: monospace, monospace;
+}
+</style>
+<div>
+  <h1>Check your Grade!</h1>
+  <input type="number" placeholder="Enter number..." id="num" ><br>
+  <button onclick="myFunction()">Check Grade</button>
+  <p id="p" ></p>
+</div>
+<script type="text/javascript">
+function myFunction() {
+var marks = document.getElementById("num").value;
+var show = document.getElementById("p");
+var txt = "Your grade is "
+
+  if( marks > 90 ) {
+    show.innerHTML = txt + "AA";
+  }
+  else if( marks > 80 && marks <= 90 ){
+    show.innerHTML = txt + "AB";
+  }
+  else if( marks > 70 && marks <= 80) {
+    show.innerHTML = txt + "BB";
+  }
+  else if( marks > 60 && marks <= 70) {
+  show.innerHTML = txt + "BC";
+  }
+  else if( marks > 50 && marks <= 60) {
+  show.innerHTML = txt + "CC";
+  }
+  else if( marks > 40 && marks <= 50) {
+  show.innerHTML = txt + "CD";
+  }
+  else if( marks > 30 && marks <= 40) {
+  show.innerHTML = txt + "DD";
+  }
+  else if(marks <= 30) {
+  show.innerHTML = txt + "FF";
+  }
+}
+</script>
+</body>
+</html>
